@@ -614,6 +614,7 @@ nav {
         0% 100%,
         0% 100%
       );
+    padding: 0 12rem;
 }
 
 .about-section-container p {
@@ -824,7 +825,7 @@ nav {
 
 .project-modal-content {
     width: 47rem;
-    height: 47rem;
+    height: 40rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -848,7 +849,7 @@ nav {
 }
 
 .project-modal-icon-wrapper {
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
