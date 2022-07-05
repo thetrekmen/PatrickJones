@@ -797,8 +797,7 @@ nav {
 /*============MODAL==============*/
 
 .project-modal {
-    padding: 3em 3em;
-    max-width: 50vw;
+    padding: 2em 2em;
     border: 0;
     box-shadow: 0 0 1em rgb(0 0 0 / .3);
     background-color: var(--background);
@@ -825,12 +824,15 @@ nav {
 
 .project-modal-content {
     width: 47rem;
-    height: 40rem;
+    height: 35rem;
     position: relative;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
     pointer-events: none;
     cursor: none;
+    padding: 0;
+    margin: 0;
 }
 
 .project-modal .project-modal-content .project-modal-img-wrapper {
@@ -860,7 +862,7 @@ nav {
 .project-modal-description-wrapper {
     text-align: left;
     letter-spacing: .1rem;
-    line-height: 1.4rem;
+    line-height: 1.3rem;
 }
 
 /* PROJECT BUTTONS */
@@ -881,7 +883,7 @@ nav {
 }
 
 .project-button-wrapper {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .live-button-wrapper:hover {
@@ -1019,7 +1021,7 @@ footer p a:hover {
 .project-modal-close-wrapper {
     position: absolute;
     right: 1rem;
-    top: 1rem;
+    top: .5rem;
     cursor:pointer;
     z-index: 120;
 }
@@ -1065,3 +1067,171 @@ text-shadow: 0 0 0.2em var(--off-white);
         opacity: 0;
     }
 }
+
+
+
+/* tablet responsive */
+/* tablet responsive */
+/* tablet responsive */
+/* tablet responsive */
+/* tablet responsive */
+@media only screen and (max-width: 1180px) {
+
+    .project-modal {
+        padding: 2em 2em;
+        border: 0;
+        box-shadow: 0 0 1em rgb(0 0 0 / .3);
+        background-color: var(--background);
+        color: var(--off-white);
+        z-index: 110;
+        clip-path: polygon(
+            0 5%,
+            2% 0,
+            100% 0,
+            100% 0%,
+            100% 95%,
+            98% 100%,
+            100% 100%,
+            0% 100%,
+            0% 100%
+          );
+    }
+    
+    .project-modal::backdrop {
+        background: rgb(0 0 0 / 0.7);
+        pointer-events: none;
+        cursor: none;
+    }
+    
+    .project-modal-content {
+        width: 47rem;
+        height: 35rem;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        pointer-events: none;
+        cursor: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .project-modal .project-modal-content .project-modal-img-wrapper {
+        height: 40%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    
+    .project-modal-content h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .project-modal-icon-wrapper {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        cursor: default;
+        pointer-events: auto;
+    }
+    
+    .project-modal-description-wrapper {
+        text-align: left;
+        letter-spacing: .1rem;
+        line-height: 1.3rem;
+    }
+    
+    /* PROJECT BUTTONS */
+    
+    .project-modal-button-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-filter-transform: translateX(-50%);
+        -ms-filter-transform: translateX(-50%);
+        -o-filter-transform: translateX(-50%);
+    
+    }
+    
+    .project-button-wrapper {
+        padding: 0rem;
+    }
+    
+    .live-button-wrapper:hover {
+        filter: drop-shadow(3px 3px 0px var(--pink))
+        drop-shadow(3px 3px 0px var(--cyan));
+        -webkit-filter: drop-shadow(3px 3px 0px var(--pink))
+        drop-shadow(3px 3px 0px var(--cyan));
+        overflow: visible;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    
+    .github-button-wrapper:hover {
+        filter: drop-shadow(3px 3px 0px var(--cyan))
+        drop-shadow(3px 3px 0px var(--pink));
+        -webkit-filter: drop-shadow(3px 3px 0px var(--cyan))
+        drop-shadow(3px 3px 0px var(--pink));
+        overflow: visible;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    
+    .project-button {
+        display: inline-block;
+        background-color: var(--background-grey);
+        padding: .5rem 2rem;
+        pointer-events: auto;
+        cursor: pointer;
+        clip-path: polygon(
+            0 30%,
+            10% 0,
+            100% 0,
+            100% 0%,
+            100% 70%,
+            90% 100%,
+            10% 100%,
+            0% 100%,
+            0% 100%
+          );
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          margin-top: .2rem;
+    }
+    
+      
+    .live-button-wrapper .project-button:active {
+        box-shadow: .5px .5px 3px;
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        transform: translateY(2px);
+        text-shadow: 0 0 0.2em var(--pink);
+    }
+    
+    .github-button-wrapper .project-button:active {
+        /* transition: outline 100ms ease-in; */
+        /* background-color: var(--background-grey); */
+        box-shadow: .5px .5px 3px;
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+        -o-transform: translateY(2px);
+        transform: translateY(2px);
+        text-shadow: 0 0 0.2em var(--cyan);
+    }
+}    
