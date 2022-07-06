@@ -82,6 +82,16 @@
                     <div class="line"></div>
                     <div class="line"></div>
 
+                    <div class="mobile-hero-wrapper">
+                        <h1 class="color-pink opac20">Hello,</h1>
+                        <h1 class="color-cyan"><span class="color-pink opac20">I'm</span> Patrick Jones</h1>
+                        <h1 class="color-orange opac70">Web Developer</h1>
+                        <h3 class="color-orange opac70">Front-end Developer</h3>
+                        <div class="hero-project-button-wrapper">
+                            <a  class="color-pink hero-project-button hero-open-modal" href="#section-footer">Get in Touch</a>
+                        </div>
+                    </div>
+
                     <div class="function-wrapper">
                         <div class="function-frontEndDeveloper-container">
                             <div class="color-yellow opac20">function</div>
@@ -151,7 +161,7 @@
     
                 <div class="about-section-80">
                     <div id="about-section-title">
-                        <div>About Me</div>
+                        <h2>About Me</h2>
                     </div>
                     <div class="about-section-container">
                         <p>
@@ -434,13 +444,51 @@
                         </div>
                     </div>
                 </dialog>
+
+                <div class="mobile-portfolio-wrapper">
+                    <h2 id="mobile-portfolio-title">Portfolio</h2>
+                    <div class="mobile-portfolio-projects">
+                        <h3>Project 1</h3>
+                        <div class="mobile-portfolio-img-wrapper"></div>
+                        <div class="mobile-portfolio-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio assumenda ratione ut optio alias voluptate modi. Libero, nobis ipsam earum dolor excepturi sed praesentium fugit eveniet pariatur dignissimos quasi enim dolorem veritatis? Animi inventore laudantium perferendis voluptas, qui nobis eveniet earum aliquid ipsam, tenetur labore, at eius repudiandae! Repudiandae, assumenda.</div>
+                        <div class="mobile-portfolio-icons"></div>
+                        <div class="mobile-portfolio-buttons"></div>
+                    </div>
+                    <div class="mobile-portfolio-projects"></div>
+                    <div class="mobile-portfolio-projects"></div>
+                    <div class="mobile-portfolio-projects"></div>
+                </div>
                 
             </section>
     
         </main>
 
-        <footer class="section-footer">
+        <footer class="section-footer" id="section-footer">
+
+            <div class="mobile-footer-wrapper">
+                <form class="mobile-form form" method="dialog">
+                    <div class="message">
+                        <h2>Get in Touch</h2>
+                        <p>For business inquiries and collaborations please provide your name, email, and a brief message.  I am looking forward to hearing from you!</p>
+                    </div>
+                    <div class="mobile-contact-info">
+                        <label><input class="contact-inputs info" type="text" placeholder="Name" required></label>
+                        <label><input class="contact-inputs info" type="email" placeholder="E-Mail" required></label>
+                        <label for="message"></label>
+                        <textarea class="modal-inputs" name="message" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="mobile-send-button-wrapper">
+                        <button class="button go-further color-pink submit-button" type="submit"><img class="mail-icon filter-pink" src="resources/svg/sent.svg" alt=""></button>
+                    </div>
+                    <div class="footer-icon-wrapper">
+                        <a href="https://github.com/thetrekmen" target="_blank" rel="noopener noreferrer"><img class="footer-icons filter-cyan" src="resources/svg/github.svg" alt=""></a> 
+                        <a href="https://www.linkedin.com/in/patrick-jones-0016377b/" target="_blank" rel="noopener noreferrer"><img class="footer-icons filter-cyan" src="resources/svg/iconmonstr-linkedin-3.svg" alt=""></a>
+                        <a href="https://www.artstation.com/navigateandexplore" target="_blank" rel="noopener noreferrer"><img class="footer-icons filter-cyan" src="resources/svg/artstation.svg" alt=""></a> 
+                    </div>
+            </div>
+
             <p><a href="https://github.com/thetrekmen/portfolio_v1" target="_blank" rel="noopener noreferrer">Designed & Built by Patrick Jones</a></p>
+
         </footer>
 
     </body>

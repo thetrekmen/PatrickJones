@@ -19,7 +19,6 @@ closeModal.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
-
 /* Project Modals */
 /* Project Modals */
 /* Project Modals */
