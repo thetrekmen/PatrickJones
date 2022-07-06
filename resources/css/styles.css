@@ -1154,6 +1154,7 @@ text-shadow: 0 0 0.2em var(--white);
   
   .mobile-portfolio-projects {
     width: 100%;
+    margin: 2rem 0;
   }
   
   .mobile-portfolio-wrapper hr {
@@ -1385,7 +1386,7 @@ footer p a:hover {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 15rem;
+    width: 23rem;
 }
 
 .info {
@@ -1393,7 +1394,7 @@ footer p a:hover {
 }
 
 .message {
-    width: 15rem;
+    width: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1410,7 +1411,7 @@ footer p a:hover {
 }
 
 .contact-inputs {
-    width: 15rem;
+    width: 23rem;
     font-family: monospace;
     font-size: 1rem;
 }
@@ -1418,7 +1419,7 @@ footer p a:hover {
 .mobile-send-button-wrapper {
     display: flex;
     justify-content: flex-end;
-    width: 15rem;
+    width: 23rem;
 }
 
 .button {
@@ -1523,9 +1524,8 @@ footer p a:hover {
 /* mobile responsive */
 /* mobile responsive */
 /* mobile responsive */
-
 /* iphone 13 promax 428px */
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 480px) {
 
     body, html {
         scroll-behavior: smooth;
@@ -1550,19 +1550,20 @@ footer p a:hover {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 1.5rem;
+        line-height: 1.5rem;
     }
 
     .function-wrapper {
         width: 80%;
-        font-size: 1rem;
         display: none;
     }
     .hero-name {
-        font-size: 1rem;
+        font-size: 3rem;
     }
 
     .function-syntax-container {
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
     
     .type {
@@ -1668,6 +1669,8 @@ footer p a:hover {
 .portfolio-section-wrapper {
     width: 100%;
     padding: 2rem 0;
+    grid-template-rows: none;
+    height: unset;
 }
 
 .portfolio-section-80 {
@@ -1723,7 +1726,7 @@ footer p a:hover {
         display: none;
     }
     .hero-name {
-        font-size: 1rem;
+        font-size: 2.5rem;
     }
 
     .function-syntax-container {
@@ -1830,30 +1833,85 @@ footer p a:hover {
 /*============PORTFOLIO SECTION==============*/
 /*============PORTFOLIO SECTION==============*/
 
-.portfolio-section-wrapper {
-    width: 100%;
-    padding: 2rem 0;
+    .portfolio-section-wrapper {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .portfolio-section-80 {
+        display: none;
+    }
+
+    .mobile-contact-info {
+        width: 21rem;
+    }
+
+    .message {
+        width: 21rem;
+    }
+
+    .contact-inputs {
+        width: 21rem;
+    }
+
+    .mobile-send-button-wrapper {
+        width: 21rem;
+    }
+
 }
 
-.portfolio-section-80 {
-    display: none;
-}
-
-.mobile-portfolio-wrapper {
-    width: 90%;
-    display: block;
-  }
-
-
-
-    /* footer section */
-    /* footer section */
-
-    .mobile-footer-wrapper {
+@media only screen and (max-width: 355px) {
+    .mobile-hero-wrapper {
         display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+    }
+
+    .function-wrapper {
+        width: 80%;
+        font-size: 1rem;
+        display: none;
+    }
+    .hero-name {
+        font-size: 2rem;
+    }
+
+    .mobile-contact-info {
+        width: 18rem;
+    }
+
+    .message {
+        width: 18rem;
+    }
+
+    .contact-inputs {
+        width: 18rem;
+    }
+
+    .mobile-send-button-wrapper {
+        width: 18rem;
     }
 }
 
+@media only screen and (max-width: 320px) {
+    .mobile-contact-info {
+        width: 16rem;
+    }
+
+    .message {
+        width: 16rem;
+    }
+
+    .contact-inputs {
+        width: 16rem;
+    }
+
+    .mobile-send-button-wrapper {
+        width: 16rem;
+    }
+}
 
 @media only screen and (max-width: 280px) {
 
@@ -1880,6 +1938,7 @@ footer p a:hover {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        font-size: 1rem;
     }
 
     .function-wrapper {
@@ -1888,7 +1947,7 @@ footer p a:hover {
         display: none;
     }
     .hero-name {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .function-syntax-container {
@@ -2017,6 +2076,23 @@ footer p a:hover {
     .mobile-footer-wrapper {
         display: block;
     }
+
+    .mobile-contact-info {
+        width: 16rem;
+    }
+
+    .message {
+        width: 16rem;
+    }
+
+    .contact-inputs {
+        width: 16rem;
+    }
+
+    .mobile-send-button-wrapper {
+        width: 16rem;
+    }
+
 }
 
 
