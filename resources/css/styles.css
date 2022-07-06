@@ -1126,6 +1126,186 @@ transform: translateY(2px);
 text-shadow: 0 0 0.2em var(--white);
 }
 
+
+
+
+
+  
+  .mobile-portfolio-wrapper {
+    width: 90%;
+    display: none;
+  }
+  
+  .mobile-portfolio-wrapper hr {
+    background-color: var(--background-grey);
+    border: none;
+    height: 1px;
+  }
+  
+  #mobile-portfolio-title {
+    color: var(--off-white);
+    font-size: 3rem;
+    font-weight: 400;
+    width: 100%;
+    opacity: 40%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .mobile-portfolio-projects {
+    width: 100%;
+  }
+  
+  .mobile-portfolio-wrapper hr {
+    background-color: var(--background-grey);
+    border: none;
+    height: 1px;
+  }
+  
+  .mobile-portfolio-projects h3 {
+    padding-left: .5rem;
+    margin: .5rem 0;
+    color: var(--off-white);
+    text-align: center;
+  }
+  
+  
+  .mobile-portfolio-img-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-height: 20rem;
+    overflow-y: hidden;
+    position: relative;
+    background-color: black;
+  }
+  
+  .mobile-portfolio-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  
+  }
+  
+  .mobile-portfolio-description {
+    padding-left: .5rem;
+    margin: .5rem 0;
+    color: var(--off-white);
+  }
+  
+  .mobile-portfolio-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .mobile-project-icon {
+    font-size: 2rem;
+    gap: 1rem;
+    margin: 8px;
+  }
+  
+  .mobile-project-button-wrapper {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+  }
+  
+  .project-modal-button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-filter-transform: translateX(-50%);
+    -ms-filter-transform: translateX(-50%);
+    -o-filter-transform: translateX(-50%);
+  }
+  
+  .project-button-wrapper {
+    padding: 0rem;
+    font-size: 1rem;
+  }
+  
+  .live-button-wrapper:hover {
+    filter: drop-shadow(3px 3px 0px var(--pink))
+    drop-shadow(3px 3px 0px var(--cyan));
+    -webkit-filter: drop-shadow(3px 3px 0px var(--pink))
+    drop-shadow(3px 3px 0px var(--cyan));
+    overflow: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .github-button-wrapper:hover {
+    filter: drop-shadow(3px 3px 0px var(--cyan))
+    drop-shadow(3px 3px 0px var(--pink));
+    -webkit-filter: drop-shadow(3px 3px 0px var(--cyan))
+    drop-shadow(3px 3px 0px var(--pink));
+    overflow: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .project-button {
+    display: inline-block;
+    background-color: var(--background-grey);
+    padding: .5rem 1rem;
+    pointer-events: auto;
+    cursor: pointer;
+    clip-path: polygon(
+        0 30%,
+        10% 0,
+        100% 0,
+        100% 0%,
+        100% 70%,
+        90% 100%,
+        10% 100%,
+        0% 100%,
+        0% 100%
+      );
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin-top: .2rem;
+  }
+  
+  
+  .live-button-wrapper .project-button:active {
+    box-shadow: .5px .5px 3px;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+    text-shadow: 0 0 0.2em var(--pink);
+  }
+  
+  .github-button-wrapper .project-button:active {
+    /* transition: outline 100ms ease-in; */
+    /* background-color: var(--background-grey); */
+    box-shadow: .5px .5px 3px;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+    text-shadow: 0 0 0.2em var(--cyan);
+  }
+  
+
+
+
+
+
+
 .ityped-cursor {
     font-size: 2.2rem;
     opacity: 1;
@@ -1494,96 +1674,8 @@ footer p a:hover {
 
 .mobile-portfolio-wrapper {
     width: 90%;
-}
-
-#mobile-portfolio-title {
-    color: var(--off-white);
-    font-size: 3rem;
-    font-weight: 400;
-    width: 100%;
-    opacity: 40%;
-    margin-bottom: 2rem;
-}
-
-
- .portfolio-projects-1 {
-    background-color: var(--background-grey);
-    background-image:url("../images/Screen\ Shot\ 2022-06-25\ at\ 21.37.06.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -khtml-border-radius: 1rem;
-    -o-border-radius:1rem;
-    border-radius: 1rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 99.7%;
-}
-
-
-
-.portfolio-projects-2 {
-    background-color: var(--background-grey);
-    background-image:url("../images/Screen\ Shot\ 2022-06-25\ at\ 22.14.46.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -khtml-border-radius: 1rem;
-    -o-border-radius:1rem;
-    border-radius: 1rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 99%;
-}
-
-
-.portfolio-projects-3 {
-    background-color: var(--background-grey);
-    background-image:url("../images/Screen\ Shot\ 2022-06-25\ at\ 22.07.19.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -khtml-border-radius: 1rem;
-    -o-border-radius:1rem;
-    border-radius: 1rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    behavior: url(css/PIE.htc);
-    overflow: hidden;
-    height: 99%;
-}
-
-.portfolio-projects-4 {
-    background-color: var(--background-grey);
-    background-image:url("../images/Screen\ Shot\ 2022-06-25\ at\ 22.07.28.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -khtml-border-radius: 1rem;
-    -o-border-radius:1rem;
-    transform: translateZ(0);
-    border-radius: 1rem;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 99%;
-}
-
+    display: block;
+  }
 
 
 
