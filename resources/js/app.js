@@ -113,5 +113,16 @@ sideEmail.addEventListener('click', function(event) {
   navigator.clipboard.writeText(email);
 });
 
-
-
+/* this is me working on closing modal with click outside */
+/* this is me working on closing modal with click outside */
+/* this is me working on closing modal with click outside */
+/* this is me working on closing modal with click outside */
+/* this is me working on closing modal with click outside */
+// const projectModal = document.querySelector(".project-modal-wrapper");
+// document.addEventListener('click', evt => {
+//   if (  document.body.style.overflow = "hidden") {
+//     if (evt.target !== projectModal) {
+//       modal.close();
+//     }
+//   }
+// });
