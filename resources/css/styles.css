@@ -19,8 +19,8 @@
 }
 
 html {
-    overflow: none;
     background: var(--pink);
+    overflow-x: hidden;
 }
 
 body, html {
@@ -1129,11 +1129,13 @@ text-shadow: 0 0 0.2em var(--white);
 
 
 
-
-
-  
-  .mobile-portfolio-wrapper {
-    width: 90%;
+/* mobile portfolio */
+/* mobile portfolio */
+/* mobile portfolio */
+/* mobile portfolio */
+/* mobile portfolio */
+.mobile-portfolio-wrapper {
+    width: 100vw;
     display: none;
   }
   
@@ -1152,11 +1154,11 @@ text-shadow: 0 0 0.2em var(--white);
     margin-bottom: 2rem;
     text-align: center;
   }
-  
+/*   
   .mobile-portfolio-projects {
     width: 100%;
     margin: 2rem 0;
-  }
+  } */
   
   .mobile-portfolio-wrapper hr {
     background-color: var(--background-grey);
@@ -1171,34 +1173,59 @@ text-shadow: 0 0 0.2em var(--white);
     text-align: center;
   }
   
+
+
+.slider-container {
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide{
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.slide img {
+  width: 95%;
+  /* height: 100%; */
+  object-fit: cover;
+
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img{
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 5px 5px 40px -1px var(--shadow);
+  overflow: visible;
+}
+
+
+
+
+
+
+
   
-  .mobile-portfolio-img-wrapper {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    overflow-y: hidden;
-    position: relative;
-    background-color: black;
-    margin: 0 auto;
-  }
-  
-  .mobile-portfolio-img-wrapper img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
   
   .mobile-portfolio-description {
-    padding-left: .5rem;
-    margin: .5rem 0;
+    margin: .5rem auto;
     color: var(--off-white);
+    width: 95vw;
   }
   
   .mobile-portfolio-icons {
@@ -1306,7 +1333,7 @@ text-shadow: 0 0 0.2em var(--white);
     text-shadow: 0 0 0.2em var(--cyan);
   }
   
-
+  
 
 
 
@@ -1688,7 +1715,6 @@ footer p a:hover {
     }
 
     .mobile-portfolio-wrapper {
-        width: 90%;
         display: block;
     }
 
@@ -2074,8 +2100,7 @@ footer p a:hover {
     }
 
     .mobile-portfolio-wrapper {
-        width: 90%;
-        display: block;
+        display: none;
     }
 
 
