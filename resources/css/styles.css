@@ -1175,10 +1175,10 @@ text-shadow: 0 0 0.2em var(--white);
   .mobile-portfolio-img-wrapper {
     width: 100%;
     aspect-ratio: 1 / 1;
-    max-height: 20rem;
     overflow-y: hidden;
     position: relative;
     background-color: black;
+    margin: 0 auto;
   }
   
   .mobile-portfolio-img-wrapper img {
