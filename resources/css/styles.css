@@ -350,6 +350,7 @@ nav {
     position: fixed;
     z-index: 100;
     background-color: var(--background-dark);
+    display: block;
 }
 
 .logo-nav-wrapper {
@@ -1528,8 +1529,13 @@ footer p a:hover {
 /* mobile responsive */
 /* mobile responsive */
 /* mobile responsive */
-/* iphone 13 promax 428px */
 @media only screen and (max-width: 480px) {
+
+    nav {
+        display: none;
+    }
+
+    
 
     body, html {
         scroll-behavior: smooth;
@@ -1664,27 +1670,27 @@ footer p a:hover {
     }
 
 
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
 
-.portfolio-section-wrapper {
-    width: 100%;
-    padding: 2rem 0;
-    grid-template-rows: none;
-    height: unset;
-}
+    .portfolio-section-wrapper {
+        width: 100%;
+        padding: 2rem 0;
+        grid-template-rows: none;
+        height: unset;
+    }
 
-.portfolio-section-80 {
-    display: none;
-}
+    .portfolio-section-80 {
+        display: none;
+    }
 
-.mobile-portfolio-wrapper {
-    width: 90%;
-    display: block;
-  }
+    .mobile-portfolio-wrapper {
+        width: 90%;
+        display: block;
+    }
 
 
 
@@ -1831,11 +1837,11 @@ footer p a:hover {
     }
 
 
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
 
     .portfolio-section-wrapper {
         width: 100%;
@@ -2052,25 +2058,25 @@ footer p a:hover {
     }
 
 
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
-/*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
+    /*============PORTFOLIO SECTION==============*/
 
-.portfolio-section-wrapper {
-    width: 100%;
-    padding: 2rem 0;
-}
+    .portfolio-section-wrapper {
+        width: 100%;
+        padding: 2rem 0;
+    }
 
-.portfolio-section-80 {
-    display: none;
-}
+    .portfolio-section-80 {
+        display: none;
+    }
 
-.mobile-portfolio-wrapper {
-    width: 90%;
-    display: block;
-  }
+    .mobile-portfolio-wrapper {
+        width: 90%;
+        display: block;
+    }
 
 
 
