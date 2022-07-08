@@ -1202,13 +1202,14 @@ text-shadow: 0 0 0.2em var(--white);
   align-items: center;
   justify-content: center;
   background-color: black;
+  user-select: none;
 }
 
 .slide img {
   width: 95%;
   /* height: 100%; */
   /* object-fit: cover; */
-
+    user-select: none;
 }
 
 .grabbing {
