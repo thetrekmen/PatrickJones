@@ -528,7 +528,7 @@ function projectFour() {
       currentTranslate = prevTranslate + currentPosition - startPos
     }
     const movedBy = currentTranslate - prevTranslate
-    if (movedBy > 15 || movedBy < -15) {
+    if (movedBy > 5 || movedBy < -5) {
       document.documentElement.style.overflow = "hidden";
     }
   }
