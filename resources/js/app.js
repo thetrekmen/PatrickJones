@@ -165,11 +165,11 @@ function projectOne() {
     return false
   }
 
-  slides1.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-  }
+  // slides1.oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   return false
+  // }
   
   function touchStart(index) {
   return function (event) {
@@ -216,10 +216,11 @@ function projectOne() {
   }
   
   function setSlider1Position() {
-    slider1.style.transform = `translateX(${currentTranslate}px)`
     slider1.style.webkitTransform = `translateX(${currentTranslate}px)`
     slider1.style.MozTransform = `translateX(${currentTranslate}px)`
     slider1.style.msTransform = `translateX(${currentTranslate}px)`
+    slider1.style.OTransform = `translateX(${currentTranslate}px)`
+    slider1.style.transform = `translateX(${currentTranslate}px)`
   }
   
   function setPositionByIndex() {
@@ -265,11 +266,11 @@ slider2.oncontextmenu = function(event) {
   return false
 }
 
-slides2.oncontextmenu = function(event) {
-  event.preventDefault()
-  event.stopPropagation()
-  return false
-}
+// slides2.oncontextmenu = function(event) {
+//   event.preventDefault()
+//   event.stopPropagation()
+//   return false
+// }
 
 function touchStart(index) {
 return function (event) {
@@ -316,10 +317,11 @@ function animation() {
 }
 
 function setSlider2Position() {
-  slider2.style.transform = `translateX(${currentTranslate}px)`
   slider2.style.webkitTransform = `translateX(${currentTranslate}px)`
   slider2.style.MozTransform = `translateX(${currentTranslate}px)`
   slider2.style.msTransform = `translateX(${currentTranslate}px)`
+  slider2.style.OTransform = `translateX(${currentTranslate}px)`
+  slider2.style.transform = `translateX(${currentTranslate}px)`
 }
 
 function setPositionByIndex() {
@@ -365,11 +367,11 @@ function projectThree() {
     return false
   }
 
-  slides3.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-  }
+  // slides3.oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   return false
+  // }
   
   function touchStart(index) {
   return function (event) {
@@ -416,10 +418,11 @@ function projectThree() {
   }
   
   function setSlider3Position() {
-    slider3.style.transform = `translateX(${currentTranslate}px)`
     slider3.style.webkitTransform = `translateX(${currentTranslate}px)`
     slider3.style.MozTransform = `translateX(${currentTranslate}px)`
     slider3.style.msTransform = `translateX(${currentTranslate}px)`
+    slider3.style.OTransform = `translateX(${currentTranslate}px)`
+    slider3.style.transform = `translateX(${currentTranslate}px)`
   }
   
   function setPositionByIndex() {
@@ -465,11 +468,11 @@ function projectFour() {
     return false
   }
 
-  slides4.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    return false
-  }
+  // slides4.oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   return false
+  // }
   
   function touchStart(index) {
   return function (event) {
@@ -517,9 +520,10 @@ function projectFour() {
   
   function setSlider4Position() {
     slider4.style.webkitTransform = `translateX(${currentTranslate}px)`
-    slider4.style.transform = `translateX(${currentTranslate}px)`
     slider4.style.MozTransform = `translateX(${currentTranslate}px)`
     slider4.style.msTransform = `translateX(${currentTranslate}px)`
+    slider4.style.OTransform = `translateX(${currentTranslate}px)`
+    slider4.style.transform = `translateX(${currentTranslate}px)`
   }
   
   function setPositionByIndex() {
