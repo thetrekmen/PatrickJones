@@ -177,9 +177,16 @@ function projectOne() {
   
     animationID = requestAnimationFrame(animation)
     slider1.classList.add("grabbing")
+
+    if (startPos) {
+      document.documentElement.style.overflow = "hidden";
     }
+
+    }
+
   }
-  
+
+
   function touchEnd() {
     isDragging = false
     cancelAnimationFrame(animationID)
@@ -195,6 +202,8 @@ function projectOne() {
     setPositionByIndex()
   
     slider1.classList.remove("grabbing")
+
+    document.documentElement.style.overflow = "";
   }
   
   function touchMove(event) {
@@ -226,13 +235,6 @@ function projectOne() {
     prevTranslate = currentTranslate
     setSlider1Position()
   }
-
-function lockBodyOnMove() {
-  if (currentTranslate !== prevTranslate) {
-    document.body.style.overflowY = hidden
-    console.log("hi")
-  }
-} lockBodyOnMove()
 
 } projectOne()
   
@@ -286,6 +288,11 @@ return function (event) {
 
   animationID = requestAnimationFrame(animation)
   slider2.classList.add("grabbing")
+
+  if (startPos) {
+    document.documentElement.style.overflow = "hidden";
+  }
+
   }
 }
 
@@ -302,6 +309,8 @@ function touchEnd() {
   currentIndex -= 1
 
   setPositionByIndex()
+
+  document.documentElement.style.overflow = "";
 
   slider2.classList.remove("grabbing")
 }
@@ -387,6 +396,10 @@ function projectThree() {
   
     animationID = requestAnimationFrame(animation)
     slider3.classList.add("grabbing")
+
+    if (startPos) {
+      document.documentElement.style.overflow = "hidden";
+    }
     }
   }
   
@@ -403,6 +416,8 @@ function projectThree() {
     currentIndex -= 1
   
     setPositionByIndex()
+
+    document.documentElement.style.overflow = "";
   
     slider3.classList.remove("grabbing")
   }
@@ -488,6 +503,11 @@ function projectFour() {
   
     animationID = requestAnimationFrame(animation)
     slider4.classList.add("grabbing")
+
+
+    if (startPos) {
+      document.documentElement.style.overflow = "hidden";
+    }
     }
   }
   
@@ -504,6 +524,8 @@ function projectFour() {
     currentIndex -= 1
   
     setPositionByIndex()
+
+    document.documentElement.style.overflow = "";
   
     slider4.classList.remove("grabbing")
   }
