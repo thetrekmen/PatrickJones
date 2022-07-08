@@ -206,7 +206,7 @@ function projectOne() {
     }
 
     const movedBy = currentTranslate - prevTranslate
-    if (movedBy > 15 || movedBy < -15) {
+    if (movedBy > 5 || movedBy < -5) {
       document.documentElement.style.overflow = "hidden";
     }
   }
@@ -314,7 +314,7 @@ function touchMove(event) {
     currentTranslate = prevTranslate + currentPosition - startPos
   }
   const movedBy = currentTranslate - prevTranslate
-  if (movedBy > 15 || movedBy < -15) {
+  if (movedBy > 5 || movedBy < -5) {
     document.documentElement.style.overflow = "hidden";
   }
 }
@@ -421,7 +421,7 @@ function projectThree() {
       currentTranslate = prevTranslate + currentPosition - startPos
     }
     const movedBy = currentTranslate - prevTranslate
-    if (movedBy > 15 || movedBy < -15) {
+    if (movedBy > 5 || movedBy < -5) {
       document.documentElement.style.overflow = "hidden";
     }
   }
@@ -528,7 +528,7 @@ function projectFour() {
       currentTranslate = prevTranslate + currentPosition - startPos
     }
     const movedBy = currentTranslate - prevTranslate
-    if (movedBy > 3 || movedBy < -3) {
+    if (movedBy > 5 || movedBy < -5) {
       document.documentElement.style.overflow = "hidden";
     }
   }
