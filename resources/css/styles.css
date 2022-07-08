@@ -20,7 +20,7 @@
 
 html {
     background: var(--pink);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body, html {
