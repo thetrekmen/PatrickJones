@@ -1257,7 +1257,7 @@ text-shadow: 0 0 0.2em var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: pink;
   user-select: none;
 }
 
