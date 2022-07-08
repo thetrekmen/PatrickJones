@@ -128,8 +128,6 @@ sideEmail.addEventListener('click', function(event) {
 
 
 
-
-
 function projectOne() {
   const slider1 = document.querySelector(".slider-container-1"),
   slides1 = Array.from(document.querySelectorAll(".slide1"))
@@ -203,6 +201,9 @@ function projectOne() {
     if (isDragging) {
       const currentPosition = getPositionX(event)
       currentTranslate = prevTranslate + currentPosition - startPos
+    }
+    if (startPos !== currentPosition) {
+      document.style.overflow = hidden
     }
   }
   
