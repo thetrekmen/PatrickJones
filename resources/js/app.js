@@ -177,6 +177,12 @@ function projectOne() {
   
     animationID = requestAnimationFrame(animation)
     slider1.classList.add("grabbing")
+    if (movedBy < -10) {
+      document.body.style.overflowY = hidden
+    }
+    if (movedBy > 10) {
+      document.body.style.overflowY = hidden
+    }
     }
   }
   
@@ -201,9 +207,6 @@ function projectOne() {
     if (isDragging) {
       const currentPosition = getPositionX(event)
       currentTranslate = prevTranslate + currentPosition - startPos
-    }
-    if (startPos !== currentPosition) {
-      document.body.style.overflowY = hidden
     }
   }
   
