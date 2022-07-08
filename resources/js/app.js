@@ -177,10 +177,6 @@ function projectOne() {
   
     animationID = requestAnimationFrame(animation)
     slider1.classList.add("grabbing")
-
-    if (currentTranslate !== prevTranslate) {
-      document.body.style.overflowY = hidden
-    }
     }
   }
   
@@ -230,6 +226,14 @@ function projectOne() {
     prevTranslate = currentTranslate
     setSlider1Position()
   }
+
+function lockBodyOnMove() {
+  if (currentTranslate !== prevTranslate) {
+    document.body.style.overflowY = hidden
+    console.log("hi")
+  }
+} lockBodyOnMove()
+
 } projectOne()
   
 
