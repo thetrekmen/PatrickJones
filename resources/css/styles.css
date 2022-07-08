@@ -20,7 +20,7 @@
 
 html {
     background: var(--pink);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body, html {
@@ -1179,8 +1179,16 @@ text-shadow: 0 0 0.2em var(--white);
   display: inline-flex;
   overflow: hidden;
   scrollbar-width: none;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
   transform: translateX(0);
   will-change: transform;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   cursor: grab;
   align-items: center;
@@ -1199,7 +1207,7 @@ text-shadow: 0 0 0.2em var(--white);
 .slide img {
   width: 95%;
   /* height: 100%; */
-  object-fit: cover;
+  /* object-fit: cover; */
 
 }
 
@@ -1208,10 +1216,16 @@ text-shadow: 0 0 0.2em var(--white);
 }
 
 .grabbing .slide img{
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
   transform: scale(0.9);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
-  box-shadow: 5px 5px 40px -1px var(--shadow);
-  overflow: visible;
 }
 
 
