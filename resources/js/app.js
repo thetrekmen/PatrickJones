@@ -164,6 +164,12 @@ function projectOne() {
     event.stopPropagation()
     return false
   }
+
+  slides1.oncontextmenu = function(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    return false
+  }
   
   function touchStart(index) {
   return function (event) {
@@ -254,6 +260,12 @@ slide2.addEventListener("mousemove", touchMove)
 
 // disable context menu
 slider2.oncontextmenu = function(event) {
+  event.preventDefault()
+  event.stopPropagation()
+  return false
+}
+
+slides2.oncontextmenu = function(event) {
   event.preventDefault()
   event.stopPropagation()
   return false
@@ -352,6 +364,12 @@ function projectThree() {
     event.stopPropagation()
     return false
   }
+
+  slides3.oncontextmenu = function(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    return false
+  }
   
   function touchStart(index) {
   return function (event) {
@@ -442,6 +460,12 @@ function projectFour() {
   
   // disable context menu
   slider4.oncontextmenu = function(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    return false
+  }
+
+  slides4.oncontextmenu = function(event) {
     event.preventDefault()
     event.stopPropagation()
     return false
