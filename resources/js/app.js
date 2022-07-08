@@ -203,7 +203,7 @@ function projectOne() {
       currentTranslate = prevTranslate + currentPosition - startPos
     }
     if (startPos !== currentPosition) {
-      document.style.overflow = hidden
+      document.body.style.overflowY = hidden
     }
   }
   
