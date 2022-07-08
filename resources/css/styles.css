@@ -436,7 +436,7 @@ nav {
 
 .mobile-hero-wrapper {
     display: none;
-    margin-left: 2rem;
+    margin-left: 10%;
 }
 
 .lines {
@@ -1144,6 +1144,7 @@ text-shadow: 0 0 0.2em var(--white);
     background-color: var(--background-grey);
     border: none;
     height: 1px;
+    margin: 1.5rem 0;
   }
   
   #mobile-portfolio-title {
@@ -1160,12 +1161,6 @@ text-shadow: 0 0 0.2em var(--white);
     width: 100%;
     margin: 2rem 0;
   } */
-  
-  .mobile-portfolio-wrapper hr {
-    background-color: var(--background-grey);
-    border: none;
-    height: 1px;
-  }
   
   .mobile-portfolio-projects h3 {
     padding-left: .5rem;
@@ -1290,7 +1285,7 @@ text-shadow: 0 0 0.2em var(--white);
   .mobile-portfolio-description {
     margin: .5rem auto;
     color: var(--off-white);
-    width: 95vw;
+    width: 90vw;
   }
   
   .mobile-portfolio-icons {
@@ -1469,7 +1464,17 @@ footer p a:hover {
     flex-direction: column;
     width: 100%;
 }
-  
+
+.mobile-footer-wrapper h2 {
+color: var(--off-white);
+font-size: 3rem;
+font-weight: 400;
+width: 100%;
+opacity: 40%;
+margin-bottom: 2rem;
+text-align: center;
+}
+
 .mobile-form {
     display: grid;
     gap: 1em;
@@ -1483,7 +1488,7 @@ footer p a:hover {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 23rem;
+    width: 90vw;
 }
 
 .info {
@@ -1491,7 +1496,7 @@ footer p a:hover {
 }
 
 .message {
-    width: 23rem;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1508,7 +1513,7 @@ footer p a:hover {
 }
 
 .contact-inputs {
-    width: 23rem;
+    width: 90vw;
     font-family: monospace;
     font-size: 1rem;
 }
@@ -1516,7 +1521,7 @@ footer p a:hover {
 .mobile-send-button-wrapper {
     display: flex;
     justify-content: flex-end;
-    width: 23rem;
+    width: 90vw;
 }
 
 .button {
@@ -1770,7 +1775,7 @@ footer p a:hover {
 
     .portfolio-section-wrapper {
         width: 100%;
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
         grid-template-rows: none;
         height: unset;
     }
@@ -1979,6 +1984,16 @@ footer p a:hover {
         font-size: 2rem;
     }
 
+    .mobile-footer-wrapper h2 {
+        color: var(--off-white);
+        font-size: 2.5rem;
+        font-weight: 400;
+        width: 100%;
+        opacity: 40%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
     .mobile-contact-info {
         width: 18rem;
     }
@@ -2014,186 +2029,6 @@ footer p a:hover {
     }
 }
 
-@media only screen and (max-width: 280px) {
-
-    body, html {
-        scroll-behavior: smooth;
-        scroll-padding-top: var(--scroll-padding, .1rem);
-    }
-
-    .side-icon-wrapper {
-        display: none;
-    }
-
-    .side-email-wrapper {
-        display: none;
-    }
-
-    /* hero section */
-    /* hero section */
-    /* hero section */
-    /* hero section */
-    /* hero section */
-    .mobile-hero-wrapper {
-        display: block;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 1rem;
-    }
-
-    .function-wrapper {
-        width: 80%;
-        font-size: 1rem;
-        display: none;
-    }
-    .hero-name {
-        font-size: 2rem;
-    }
-
-    .function-syntax-container {
-        margin-left: 1rem;
-    }
-    
-    .type {
-        font-size: 1rem;
-      }
-
-    .ityped-cursor {
-        font-size: 1.2rem;
-    }
-
-
-    /*============ABOUT SECTION==============*/
-    /*============ABOUT SECTION==============*/
-    /*============ABOUT SECTION==============*/
-    /*============ABOUT SECTION==============*/
-    /*============ABOUT SECTION==============*/
-    .about-section-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        padding-bottom: 1rem;
-    }
-    
-    .about-section-80 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-
-    #about-section-title h2 {
-        color: var(--off-white);
-        font-size: 3rem;
-        font-weight: 400;
-        width: 100%;
-        opacity: 40%;
-        margin-bottom: 2rem;
-    }
-
-    .about-section-container {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        clip-path: polygon(
-            0 5%,
-            2% 0,
-            100% 0,
-            100% 0%,
-            100% 95%,
-            98% 100%,
-            100% 100%,
-            0% 100%,
-            0% 100%
-        );
-        background: none;
-    }
-
-    .about-section-container p {
-        width: 100%;
-        font-size: 1rem;
-        color: var(--off-white);
-        line-height: 1.5rem;
-        /* letter-spacing: .1rem; */
-    }
-
-    .about-me-icons {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .icon-row-1 {
-        display: flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-        width: 90%;
-    }
-
-    .icon-row-2 {
-        display: flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-        width: 90%;
-    }
-
-    .about-icon {
-        font-size: 2rem;
-    }
-
-
-    /*============PORTFOLIO SECTION==============*/
-    /*============PORTFOLIO SECTION==============*/
-    /*============PORTFOLIO SECTION==============*/
-    /*============PORTFOLIO SECTION==============*/
-    /*============PORTFOLIO SECTION==============*/
-
-    .portfolio-section-wrapper {
-        width: 100%;
-        padding: 2rem 0;
-    }
-
-    .portfolio-section-80 {
-        display: none;
-    }
-
-    .mobile-portfolio-wrapper {
-        display: none;
-    }
-
-
-
-    /* footer section */
-    /* footer section */
-
-    .mobile-footer-wrapper {
-        display: block;
-    }
-
-    .mobile-contact-info {
-        width: 16rem;
-    }
-
-    .message {
-        width: 16rem;
-    }
-
-    .contact-inputs {
-        width: 16rem;
-    }
-
-    .mobile-send-button-wrapper {
-        width: 16rem;
-    }
-
-}
 
 
 /* tablet responsive */
