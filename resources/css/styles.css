@@ -21,6 +21,7 @@
 html {
     background: var(--pink);
     overflow-x: hidden;
+    overflow: unset;
 }
 
 body, html {
@@ -33,7 +34,6 @@ body, html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 5.5rem);
-    overflow-y:unset;
 }
 
 .filter-cyan {
