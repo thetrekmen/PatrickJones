@@ -177,15 +177,8 @@ function projectOne() {
   
     animationID = requestAnimationFrame(animation)
     slider1.classList.add("grabbing")
-
-    if (startPos) {
-      document.documentElement.style.overflow = "hidden";
     }
-
-    }
-
   }
-
 
   function touchEnd() {
     isDragging = false
@@ -210,6 +203,11 @@ function projectOne() {
     if (isDragging) {
       const currentPosition = getPositionX(event)
       currentTranslate = prevTranslate + currentPosition - startPos
+    }
+
+    const movedBy = currentTranslate - prevTranslate
+    if (movedBy > 15 || movedBy < -15) {
+      document.documentElement.style.overflow = "hidden";
     }
   }
   
@@ -288,11 +286,6 @@ return function (event) {
 
   animationID = requestAnimationFrame(animation)
   slider2.classList.add("grabbing")
-
-  if (startPos) {
-    document.documentElement.style.overflow = "hidden";
-  }
-
   }
 }
 
@@ -319,6 +312,10 @@ function touchMove(event) {
   if (isDragging) {
     const currentPosition = getPositionX(event)
     currentTranslate = prevTranslate + currentPosition - startPos
+  }
+  const movedBy = currentTranslate - prevTranslate
+  if (movedBy > 15 || movedBy < -15) {
+    document.documentElement.style.overflow = "hidden";
   }
 }
 
@@ -396,10 +393,6 @@ function projectThree() {
   
     animationID = requestAnimationFrame(animation)
     slider3.classList.add("grabbing")
-
-    if (startPos) {
-      document.documentElement.style.overflow = "hidden";
-    }
     }
   }
   
@@ -426,6 +419,10 @@ function projectThree() {
     if (isDragging) {
       const currentPosition = getPositionX(event)
       currentTranslate = prevTranslate + currentPosition - startPos
+    }
+    const movedBy = currentTranslate - prevTranslate
+    if (movedBy > 15 || movedBy < -15) {
+      document.documentElement.style.overflow = "hidden";
     }
   }
   
@@ -503,11 +500,6 @@ function projectFour() {
   
     animationID = requestAnimationFrame(animation)
     slider4.classList.add("grabbing")
-
-
-    if (startPos) {
-      document.documentElement.style.overflow = "hidden";
-    }
     }
   }
   
@@ -534,6 +526,10 @@ function projectFour() {
     if (isDragging) {
       const currentPosition = getPositionX(event)
       currentTranslate = prevTranslate + currentPosition - startPos
+    }
+    const movedBy = currentTranslate - prevTranslate
+    if (movedBy > 15 || movedBy < -15) {
+      document.documentElement.style.overflow = "hidden";
     }
   }
   
