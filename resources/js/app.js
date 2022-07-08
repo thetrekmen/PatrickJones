@@ -160,14 +160,16 @@ function projectOne() {
   slider1.oncontextmenu = function(event) {
     event.preventDefault()
     event.stopPropagation()
+    event.stopImmediatePropagation();
     return false
   }
 
-  // slides1.oncontextmenu = function(event) {
-  //   event.preventDefault()
-  //   event.stopPropagation()
-  //   return false
-  // }
+  slides1.oncontextmenu = function(event) {
+    event.preventDefault()
+    event.stopPropagation()
+    event.stopImmediatePropagation();
+    return false
+  }
   
   function touchStart(index) {
   return function (event) {
