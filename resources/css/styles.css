@@ -1175,6 +1175,9 @@ text-shadow: 0 0 0.2em var(--white);
   
 
 
+
+
+
 .slider-container {
   display: inline-flex;
   overflow: hidden;
@@ -1185,12 +1188,12 @@ text-shadow: 0 0 0.2em var(--white);
 }
 
 .slider-container-1 {
+    will-change: transform;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
-    will-change: transform;
     -webkit-transition: transform 0.3s ease-out;
     -moz-transition: transform 0.3s ease-out;
     -ms-transition: transform 0.3s ease-out;
@@ -1199,12 +1202,12 @@ text-shadow: 0 0 0.2em var(--white);
 }
 
 .slider-container-2 {
+    will-change: transform;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
-    will-change: transform;
     -webkit-transition: transform 0.3s ease-out;
     -moz-transition: transform 0.3s ease-out;
     -ms-transition: transform 0.3s ease-out;
@@ -1213,12 +1216,12 @@ text-shadow: 0 0 0.2em var(--white);
 }
 
 .slider-container-3 {
+    will-change: transform;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
-    will-change: transform;
     -webkit-transition: transform 0.3s ease-out;
     -moz-transition: transform 0.3s ease-out;
     -ms-transition: transform 0.3s ease-out;
@@ -1227,29 +1230,18 @@ text-shadow: 0 0 0.2em var(--white);
 }
 
 .slider-container-4 {
+    will-change: transform;
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0);
-    will-change: transform;
     -webkit-transition: transform 0.3s ease-out;
     -moz-transition: transform 0.3s ease-out;
     -ms-transition: transform 0.3s ease-out;
     -o-transition: transform 0.3s ease-out;
     transition: transform 0.3s ease-out;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .slide{
   width: 100vw;
@@ -1273,6 +1265,7 @@ text-shadow: 0 0 0.2em var(--white);
 }
 
 .grabbing .slide img{
+  will-change: transform;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -1292,7 +1285,7 @@ text-shadow: 0 0 0.2em var(--white);
 
 
   
-  
+
   .mobile-portfolio-description {
     margin: .5rem auto;
     color: var(--off-white);
