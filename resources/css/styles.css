@@ -1247,6 +1247,7 @@ text-shadow: 0 0 0.2em var(--white);
   justify-content: center;
   background-color: var(--background);
   user-select: none;
+  -webkit-user-select: none;
 }
 
 .slide img {
@@ -1254,6 +1255,7 @@ text-shadow: 0 0 0.2em var(--white);
   /* height: 100%; */
   /* object-fit: cover; */
     user-select: none;
+    -webkit-user-select: none;
 }
 
 .grabbing {
