@@ -1140,6 +1140,7 @@ text-shadow: 0 0 0.2em var(--white);
 .mobile-portfolio-wrapper {
     width: 100vw;
     display: none;
+    margin: 7rem;
   }
   
   .mobile-portfolio-wrapper hr {
@@ -1158,11 +1159,16 @@ text-shadow: 0 0 0.2em var(--white);
     margin-bottom: 2rem;
     text-align: center;
   }
-/*   
+  
   .mobile-portfolio-projects {
     width: 100%;
     margin: 2rem 0;
-  } */
+    padding: 2rem 0 3rem 0;
+    box-shadow: -1px 5px 5px 0px rgba(0,0,0,rgba(0, 0, 0, 0.2));
+    -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
   
   .mobile-portfolio-projects h3 {
     padding-left: .5rem;
