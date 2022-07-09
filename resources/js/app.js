@@ -157,12 +157,12 @@ function projectOne() {
   })
   
   // disable context menu
-  document.getElementById("#slider-container-1").oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    event.stopImmediatePropagation();
-    return false
-  }
+  // document.getElementById("#slider-container-1").oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   event.stopImmediatePropagation();
+  //   return false
+  // }
   
   function touchStart(index) {
   return function (event) {
@@ -261,12 +261,12 @@ slide2.addEventListener("mousemove", touchMove)
 })
 
   // disable context menu
-  document.getElementById("#slider-container-2").oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    event.stopImmediatePropagation();
-    return false
-  }
+  // document.getElementById("#slider-container-2").oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   event.stopImmediatePropagation();
+  //   return false
+  // }
 
 function touchStart(index) {
 return function (event) {
@@ -363,12 +363,12 @@ function projectThree() {
   })
   
   // disable context menu
-  document.getElementById("#slider-container-3").oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    event.stopImmediatePropagation();
-    return false
-  }
+  // document.getElementById("#slider-container-3").oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   event.stopImmediatePropagation();
+  //   return false
+  // }
   
   function touchStart(index) {
   return function (event) {
@@ -465,12 +465,12 @@ function projectFour() {
   })
   
   // disable context menu
-  document.getElementById("#slider-container-4").oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    event.stopImmediatePropagation();
-    return false
-  }
+  // document.getElementById("#slider-container-4").oncontextmenu = function(event) {
+  //   event.preventDefault()
+  //   event.stopPropagation()
+  //   event.stopImmediatePropagation();
+  //   return false
+  // }
   
   function touchStart(index) {
   return function (event) {
