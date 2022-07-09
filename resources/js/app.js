@@ -536,3 +536,38 @@ function projectFour() {
     setSlider4Position()
   }
 } projectFour()
+
+// const body = document.querySelector("body");
+
+// body.onload(function(){
+//   const loadWrapper = document.querySelector(".loader-wrapper");
+
+
+//   loadWrapper.addEventListener('click', () => loadWrapper.style.opacity = '0');
+
+//   loadWrapper.addEventListener('transitionend', () => loadWrapper.remove());
+// }, 5000)
+
+// setTimeout(function(){
+//   const loadWrapper = document.querySelector(".loader-wrapper");
+//   loadWrapper.fadeOutEffect()
+// }, 5000)
+
+// setTimeout()
+const loadWrapper = document.querySelector(".loader-wrapper");
+const logoLoader = document.querySelector(".logo-loader");
+
+window.onload = function(){
+  // logoLoader.style.opacity = "1";
+  setTimeout(function(){
+    loadWrapper.style.opacity = "0";
+  }, 5000);
+ };
+
+// window.onload = function(){
+//   logoLoader.style.opacity = "1";
+// };
+
+loadWrapper.addEventListener('transitionend', () => {
+  loadWrapper.remove();
+}, 6000);
