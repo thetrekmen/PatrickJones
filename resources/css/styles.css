@@ -428,7 +428,7 @@ nav {
 
 .hero-section {
     width: 100%;
-    min-height: 800px;
+    min-height: 100vh;
     position: relative;
     margin: 0 auto;
     background-color: var(--background-dark);
@@ -1674,10 +1674,13 @@ text-align: center;
     /* hero section */
     /* hero section */
     /* hero section */
+
+
+
     .mobile-hero-wrapper {
         display: block;
         position: relative;
-        top: 40%;
+        top: 50%;
         transform: translateY(-50%);
         font-size: 1.5rem;
         line-height: 1.5rem;
