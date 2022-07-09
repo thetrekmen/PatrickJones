@@ -556,14 +556,19 @@ function projectFour() {
 // setTimeout()
 const loadWrapper = document.querySelector(".loader-wrapper");
 const logoLoader = document.querySelector(".logo-loader");
-
+const mainCont = document.querySelector("main");
+const headerCont = document.querySelector("header");
 window.onload = function(){
   setTimeout(function(){
     loadWrapper.style.opacity = "0";
-  }, 5000);
+  }, 4000);
  };
 
+ setTimeout(function(){
+  headerCont.style.display = "block";
+  mainCont.style.display = "block";
+}, 3800);
 
 loadWrapper.addEventListener('transitionend', () => {
   loadWrapper.remove();
-}, 6500);
+}, 4000);

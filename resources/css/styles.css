@@ -52,10 +52,19 @@ body, html {
     filter: invert(46%) sepia(64%) saturate(1895%) hue-rotate(287deg) brightness(102%) contrast(102%);
 }
 
+header {
+    display: none;
+}
+
 main {
     width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
+    display: none;
+}
+
+footer {
+    display: none;
 }
 
 .loader-wrapper {
@@ -77,8 +86,8 @@ main {
     /* opacity: 1; */
     width: 10rem;
     /* transition: opacity 1s ease-in; */
-    -webkit-animation: fadeIn 1000s ease-in, spin 3000ms linear 1000ms;
-    animation: fadeIn 1000ms ease-in, spin 3000ms linear 1000ms, shrink 500ms 4500ms forwards;
+    -webkit-animation: fadeIn 1000s ease-in, spin 2000ms linear 1000ms;
+    animation: fadeIn 1000ms ease-in, spin 2000ms linear 1000ms, shrink 500ms 3500ms forwards;
 }
 
 @keyframes spin {
