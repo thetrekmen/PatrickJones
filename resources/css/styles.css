@@ -74,13 +74,11 @@ main {
 }
 
 .logo-loader {
-    opacity: 1;
+    /* opacity: 1; */
     width: 10rem;
-    transition: opacity 1s ease-in;
-    animation: spin;
-    animation-duration: 3000ms;
-    animation-timing-function: linear; ;
-    animation-delay: 1000ms;
+    /* transition: opacity 1s ease-in; */
+    -webkit-animation: fadeIn 1000s ease-in, spin 3000ms linear 1000ms;
+    animation: fadeIn 1000ms ease-in, spin 3000ms linear 1000ms, shrink 500ms 4500ms forwards;
 }
 
 @keyframes spin {
@@ -89,6 +87,24 @@ main {
     }
     to {
         transform:rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
     }
 }
 

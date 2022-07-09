@@ -558,16 +558,12 @@ const loadWrapper = document.querySelector(".loader-wrapper");
 const logoLoader = document.querySelector(".logo-loader");
 
 window.onload = function(){
-  // logoLoader.style.opacity = "1";
   setTimeout(function(){
     loadWrapper.style.opacity = "0";
   }, 5000);
  };
 
-// window.onload = function(){
-//   logoLoader.style.opacity = "1";
-// };
 
 loadWrapper.addEventListener('transitionend', () => {
   loadWrapper.remove();
-}, 6000);
+}, 6500);
