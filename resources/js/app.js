@@ -157,14 +157,7 @@ function projectOne() {
   })
   
   // disable context menu
-  slider1.oncontextmenu = function(event) {
-    event.preventDefault()
-    event.stopPropagation()
-    event.stopImmediatePropagation();
-    return false
-  }
-
-  slides1.oncontextmenu = function(event) {
+  document.getElementById("#slider-container-1").oncontextmenu = function(event) {
     event.preventDefault()
     event.stopPropagation()
     event.stopImmediatePropagation();
