@@ -1181,9 +1181,6 @@ text-shadow: 0 0 0.2em var(--white);
   cursor: grab;
   align-items: center;
   justify-content: center;
-  -webkit-touch-callout: none !important; 
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .slider-container-1 {
