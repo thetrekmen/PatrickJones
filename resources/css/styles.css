@@ -1677,7 +1677,7 @@ text-align: center;
     .mobile-hero-wrapper {
         display: block;
         position: relative;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
         font-size: 1.5rem;
         line-height: 1.5rem;
