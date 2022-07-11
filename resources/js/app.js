@@ -600,21 +600,21 @@ for ( i = 0; i < navLinks.length; i++ ) {
 /* page loader */
 /* page loader */
 /* page loader */
-// const loadWrapper = document.querySelector(".loader-wrapper");
-// const logoLoader = document.querySelector(".logo-loader");
+const loadWrapper = document.querySelector(".loader-wrapper");
+const logoLoader = document.querySelector(".logo-loader");
 
 
-// window.onload = function(){
-//   setTimeout(function(){
-//     loadWrapper.style.opacity = "0";
-//   }, 4000);
-//  };
+window.onload = function(){
+  setTimeout(function(){
+    loadWrapper.style.opacity = "0";
+  }, 4000);
+ };
 
-//  setTimeout(function(){
-//   headerCont.style.display = "block";
-//   mainCont.style.display = "block";
-// }, 00);
+ setTimeout(function(){
+  headerCont.style.display = "block";
+  mainCont.style.display = "block";
+}, 3800);
 
-// loadWrapper.addEventListener('transitionend', () => {
-//   loadWrapper.remove();
-// }, 4000);
+loadWrapper.addEventListener('transitionend', () => {
+  loadWrapper.remove();
+}, 4000);
