@@ -61,15 +61,15 @@ ul {
     filter: invert(46%) sepia(64%) saturate(1895%) hue-rotate(287deg) brightness(102%) contrast(102%);
 }
 
-/* header {
+header {
     display: none;
-} */
+}
 
 main {
     width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
-    /* display: none; */
+    display: none;
 }
 
 footer {
@@ -311,7 +311,6 @@ footer {
     left: 0;
     top: 8rem;
     font-size: 2rem;
-    color: var(--off-white);
     list-style: none;
     gap: 3rem;
 }
