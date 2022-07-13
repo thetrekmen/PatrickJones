@@ -641,3 +641,22 @@ loadWrapper.addEventListener('transitionend', () => {
 }, 4000);
 
 
+
+
+/* navbar scroll hide*/
+/* navbar scroll hide*/
+/* navbar scroll hide*/
+/* navbar scroll hide*/
+/* navbar scroll hide*/
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.position = "fixed";
+    document.getElementById("header").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+
+}

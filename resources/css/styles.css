@@ -34,6 +34,7 @@ body, html {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: var(--scroll-padding, 5.5rem);
+    overflow: unset;
 }
 
 a:link { text-decoration: none; }
@@ -62,7 +63,9 @@ ul {
 }
 
 header {
-    display: none;
+    position: fixed;
+    transition: top 0.5s;
+    z-index: 140;
 }
 
 main {
