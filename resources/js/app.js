@@ -553,6 +553,12 @@ const navLinks = document.querySelectorAll(".mobile-links")
 const mobileNavBar = document.getElementsByClassName("mobile-nav-wrapper")
 const navLinksWrapper = document.querySelector(".mobile-nav-links-wrapper")
 const navLogo = document.querySelector("#logo-nav")
+const navUlWrapper = document.querySelector("#mobile-nav-ul-wrapper")
+
+
+
+
+// navUlWrapper.classList.add("drop-down");
 
 
 
@@ -573,17 +579,25 @@ navToggle.addEventListener('click', () => {
 navToggle.addEventListener("click", () => {
     const visibility = primaryNav.getAttribute("data-visible")
 
-
-    if (visibility === "false") {
-        primaryNav.setAttribute('data-visible', true);
-        document.body.style.overflow = "hidden"
-    } else if (visibility === "true") {
-        primaryNav.setAttribute('data-visible', false);
-        document.body.style.overflow = ""
-        document.body.style.filter = "blur(0px)";
-    }
+  if (visibility === "false") {
+    primaryNav.setAttribute('data-visible', true);
+    document.body.style.overflow = "hidden"
+    
+  } else if (visibility === "true") {
+    primaryNav.setAttribute('data-visible', false);
+    document.body.style.overflow = ""
+    document.body.style.filter = "blur(0px)";
+  }
 });
 
+
+const lightsOn = primaryNav.getAttribute("data-visible")
+  if (lightsOn === "false") {
+    navUlWrapper.classList.toggle("open");
+  }
+  else if (lightsOn === "true") {
+    navUlWrapper.classList.toggle("open");
+  }
 
 for ( i = 0; i < navLinks.length; i++ ) {
   navLinks[i].addEventListener("click", () => {
@@ -593,6 +607,13 @@ for ( i = 0; i < navLinks.length; i++ ) {
     document.body.style.filter = "blur(0px)";
   });
 }
+
+
+
+
+
+
+
 
 
 /* page loader */
@@ -618,3 +639,5 @@ window.onload = function(){
 loadWrapper.addEventListener('transitionend', () => {
   loadWrapper.remove();
 }, 4000);
+
+
