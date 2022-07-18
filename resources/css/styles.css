@@ -2164,7 +2164,7 @@ footer p a {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1rem;
     }
 
@@ -2173,7 +2173,7 @@ footer p a {
         display: none;
     }
     .hero-name {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 
     .function-syntax-container {
@@ -2204,6 +2204,47 @@ footer p a {
     
     }
 
+
+
+}
+
+@media only screen and (max-width: 396px) {
+
+    body, html {
+        scroll-behavior: smooth;
+        scroll-padding-top: var(--scroll-padding, .1rem);
+    }
+
+    .side-icon-wrapper {
+        display: none;
+    }
+
+    .side-email-wrapper {
+        display: none;
+    }
+
+    /* hero section */
+    /* hero section */
+    /* hero section */
+    /* hero section */
+    /* hero section */
+
+    .mobile-hero-wrapper {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+
+    .hero-name {
+        font-size: 2.2rem;
+    }
+
+
+ 
 
 
 }
