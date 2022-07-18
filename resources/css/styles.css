@@ -630,7 +630,11 @@ nav {
 
 .hero-section {
     width: 100%;
-    min-height: 810px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin: 0 auto;
     background-color: var(--background-dark);
@@ -941,13 +945,13 @@ path.two {
 .portfolio-box1 {
     padding-top: 1px;
     display: grid;
-    grid-template-columns:99%;
+    grid-template-columns:98.5%;
     justify-content: center;
 }
 
 .portfolio-box2 {
     display: grid;
-    grid-template-columns:32% 32% 32%;
+    grid-template-columns:32.5% 32.5% 32.5%;
     justify-content: center;
     gap: 7.5px;
 }
