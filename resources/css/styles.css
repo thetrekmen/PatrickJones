@@ -65,9 +65,17 @@ ul {
 
 header {
     position: fixed;
-    transition: top 0.5s;
     z-index: 140;
+    top: 0;
+    transition: all .5s;
+    -webkit-transition: all 1s;
 }
+
+/* .nav-up {
+    top: -70px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+  } */
 
 main {
     width: 100%;
@@ -642,17 +650,17 @@ nav {
 
 .mobile-hero-wrapper {
     display: none;
-    margin: 10%;
+    /* margin: 10%; */
 }
 
 
 .function-wrapper {
     position: absolute;
-    width: 80%;
+    width: 75%;
     font-size: 2rem;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
 }
 
 .opac70 {
