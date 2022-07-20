@@ -687,3 +687,24 @@ setInterval(function() {
     didScroll = false;
    }
 }, 100)
+
+const screenSize = screen.width;
+if (screenSize <= 1043 && screenSize >= 600) {
+  document.querySelector(".guts-words").innerHTML = "Projects";
+  document.querySelector(".cta").href = "#portfolio";
+} else {
+  document.querySelector(".guts-words").innerHTML = "Get In Touch";
+  document.querySelector(".cta").href = "#contact";
+}
+
+
+window.addEventListener('resize', function(event) {
+  const screenSize = screen.width;
+  if (screenSize <= 1043 && screenSize >= 600) {
+    document.querySelector(".guts-words").innerHTML = "Projects";
+    document.querySelector(".cta").href = "#portfolio";
+  } else {
+    document.querySelector(".guts-words").innerHTML = "Get In Touch";
+    document.querySelector(".cta").href = "#contact";
+  }
+}, true);

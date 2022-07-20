@@ -725,13 +725,13 @@ nav {
   
 .guts {
     transform: skewX(15deg) 
+
 }
   
 .guts:nth-child(2) {
     width: 20px;
     margin-left: 30px;
     position: relative;
-    top: 0;
 }
     
 /**************SVG****************/
@@ -833,7 +833,53 @@ path.two {
 .return-container div{
     display: inline-block;
     height: 4rem;
+
 }
+
+.hero-button-wrapper {
+    display: inline-block;
+    height: 1rem;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.hero-button-wrapper:active {
+    transform: translate(2px, 2px);
+}
+
+.cta-hero-button {
+    /* height: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: var(--off-white);
+    background: var(--background-grey);
+    transition: 1s;
+    box-shadow: 3px 3px 0 black;
+    transform: skewX(-15deg);
+    cursor: pointer;
+    color: var(--pink);
+    margin-left: 1rem;
+}
+
+.cta-hero-button:focus {
+    outline: none; 
+}
+ 
+
+
+.cta-hero-button:active {
+   box-shadow:3px 3px 0 var(--pink);
+   transition: 0.2s;
+}
+
+.gut {
+    transform: skewX(15deg) 
+}
+  
+
 
 /*============ABOUT SECTION==============*/
 /*============ABOUT SECTION==============*/
@@ -1197,14 +1243,14 @@ path.two {
      outline: none; 
 }
 
-.cyan:active {
+.color-cyan:active {
     box-shadow:1px 1px 0 var(--cyan);
     transition: 0.2s;
 }
 
 
 
-.pink:active {
+.color-pink:active {
     box-shadow:1px 1px 0 var(--pink);
     transition: 0.2s;
 }
