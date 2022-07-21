@@ -63,6 +63,14 @@ ul {
     filter: invert(46%) sepia(64%) saturate(1895%) hue-rotate(287deg) brightness(102%) contrast(102%);
 }
 
+.filter-off-white {
+    -webkit-filter: invert(84%) sepia(0%) saturate(1383%) hue-rotate(194deg) brightness(104%) contrast(73%);
+    -mos-filter: invert(84%) sepia(0%) saturate(1383%) hue-rotate(194deg) brightness(104%) contrast(73%);
+    -ms-filter: invert(84%) sepia(0%) saturate(1383%) hue-rotate(194deg) brightness(104%) contrast(73%);
+    -o-filter: invert(84%) sepia(0%) saturate(1383%) hue-rotate(194deg) brightness(104%) contrast(73%);
+    filter: invert(84%) sepia(0%) saturate(1383%) hue-rotate(194deg) brightness(104%) contrast(73%);
+}
+
 header {
     position: fixed;
     z-index: 140;
@@ -286,7 +294,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 8rem;
+    top: 10rem;
     left: 5%;
     font-size: 1rem;
     list-style: none;
@@ -302,6 +310,9 @@ footer {
 .mobile-nav-ul li a {
     color: var(--off-white);
     /* outline: red solid 1px; */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .nav-name-wrapper {
@@ -333,13 +344,13 @@ footer {
 }
 
 .nav-link-wrapper {
+    position: relative;
     display: flex;
-    position:absolute;
     justify-content: center;
     width: 100%;
     gap: 2rem;
-    bottom: 5%;
     overflow: hidden;
+    top: 1rem;
 }
 
 
@@ -352,6 +363,10 @@ footer {
     left: 3%;
     bottom: 10%;
     z-index: 100;
+}
+
+.nav-pagelink-icons {
+    width: 2rem;
 }
 
 .side-icons {
