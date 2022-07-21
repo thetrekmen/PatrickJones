@@ -1681,19 +1681,19 @@ footer p a {
 /* ipad size */
 @media only screen and (max-width: 1200px) and (max-height: 1000px){
     .function-wrapper {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     
     .hero-name {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .ityped-cursor {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .type {
-        font-size: 1.2rem;
+        font-size: 2rem;
       }
 
 }
