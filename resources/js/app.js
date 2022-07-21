@@ -555,13 +555,6 @@ const navLinksWrapper = document.querySelector(".mobile-nav-links-wrapper")
 const navLogo = document.querySelector("#logo-nav")
 const navUlWrapper = document.querySelector("#mobile-nav-ul-wrapper")
 
-
-
-
-// navUlWrapper.classList.add("drop-down");
-
-
-
 navLinksWrapper.addEventListener("click", function(ev) {
   if(ev.target.id == "mobile-nav-links-wrapper"){
     navToggle.classList.toggle('open')
@@ -569,8 +562,6 @@ navLinksWrapper.addEventListener("click", function(ev) {
     document.body.style.overflow = ""
   }
 });
-
-
 
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('open')
@@ -590,7 +581,6 @@ navToggle.addEventListener("click", () => {
   }
 });
 
-
 const lightsOn = primaryNav.getAttribute("data-visible")
   if (lightsOn === "false") {
     navUlWrapper.classList.toggle("open");
@@ -607,14 +597,6 @@ for ( i = 0; i < navLinks.length; i++ ) {
     document.body.style.filter = "blur(0px)";
   });
 }
-
-
-
-
-
-
-
-
 
 /* page loader */
 /* page loader */
@@ -639,8 +621,6 @@ window.onload = function(){
 loadWrapper.addEventListener('transitionend', () => {
   loadWrapper.remove();
 }, 4000);
-
-
 
 
 /* navbar scroll hide*/
@@ -688,6 +668,13 @@ setInterval(function() {
    }
 }, 100)
 
+
+
+/* changes innerHTML for hero button */
+/* changes innerHTML for hero button */
+/* changes innerHTML for hero button */
+/* changes innerHTML for hero button */
+/* changes innerHTML for hero button */
 const screenSize = screen.width;
 if (screenSize <= 1043 && screenSize >= 600) {
   document.querySelector(".guts-words").innerHTML = "Projects";
@@ -696,7 +683,6 @@ if (screenSize <= 1043 && screenSize >= 600) {
   document.querySelector(".guts-words").innerHTML = "Get In Touch";
   document.querySelector(".cta").href = "#contact";
 }
-
 
 window.addEventListener('resize', function(event) {
   const screenSize = screen.width;
